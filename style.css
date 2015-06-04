@@ -3,6 +3,10 @@ img {
     margin-bottom: 1em;
 }
 
+dt {
+    font-weight: bold;
+}
+
 hr {
     clear: both;
 }
