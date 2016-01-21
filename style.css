@@ -1,12 +1,35 @@
-img {
-    float: right;
-    margin-bottom: 1em;
+body {
+  background: #000000;
+  color: #00cc99;
+  font-family: "Comic Sans MS", Arial, sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+a {
+  color: #00ffff;
+}
+
+h1 + img {
+  border-radius: 50%;
+  float: right;
 }
 
 dt {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 hr {
-    clear: both;
+  clear: both;
+  margin-top: 1.5em;
+}
+
+hr ~ a {
+  float: right;
+  margin-left: 0.5em;
+}
+
+hr ~ a > img {
+  height: 31px;
+  width: 88px;
 }
