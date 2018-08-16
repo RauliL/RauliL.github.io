@@ -29,3 +29,8 @@ a {
 a:hover {
   color: DarkGreen;
 }
+
+hr ~ a {
+  display: inline-block;
+  text-decoration: none;
+}
