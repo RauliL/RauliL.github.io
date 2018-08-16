@@ -34,3 +34,27 @@ hr ~ a {
   display: inline-block;
   text-decoration: none;
 }
+
+h1, h2, p, pre {
+  animation-duration: 15s;
+  animation-name: flicker;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flicker {
+  0% {
+    filter: blur(0px);
+  }
+
+  98% {
+    filter: blur(0.1px);
+  }
+
+  99% {
+    filter: blur(0.2px);
+  }
+
+  100% {
+    filter: blur(0.3px);
+  }
+}
