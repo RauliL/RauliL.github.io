@@ -1,35 +1,31 @@
 body {
-  background: #000000;
-  color: #00cc99;
-  font-family: "Comic Sans MS", Arial, sans-serif;
-  margin-left: 5%;
-  margin-right: 5%;
+  font-family: 'VT323', monospace;
+  background-color: #000;
+  color: MediumSpringGreen;
+  margin: 40px auto;
+  padding: 0 10px;
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+h1 ~ img {
+  border-radius: 50%;
+  opacity: 0.35;
+  filter: hue-rotate(90deg);
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+h1, h2 {
+  line-height: 1.2;
 }
 
 a {
-  color: #00ffff;
+  color: MediumSeaGreen;
+  text-decoration: underline;
 }
 
-h1 + img {
-  border-radius: 50%;
-  float: right;
-}
-
-dt {
-  font-weight: bold;
-}
-
-hr {
-  clear: both;
-  margin-top: 1.5em;
-}
-
-hr ~ a {
-  float: right;
-  margin-left: 0.5em;
-}
-
-hr ~ a > img {
-  height: 31px;
-  width: 88px;
+a:hover {
+  color: DarkGreen;
 }
