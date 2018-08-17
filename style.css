@@ -58,3 +58,10 @@ h1, h2, p, pre {
     filter: blur(0.3px);
   }
 }
+
+@media screen and (max-width: 640px) {
+  body {
+    margin: 10px auto;
+    max-width: auto;
+  }
+}
