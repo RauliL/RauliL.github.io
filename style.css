@@ -41,6 +41,10 @@ h1, h2, p, pre {
   animation-iteration-count: infinite;
 }
 
+pre {
+  overflow-x: auto;
+}
+
 @keyframes flicker {
   0% {
     filter: blur(0px);
@@ -62,6 +66,6 @@ h1, h2, p, pre {
 @media screen and (max-width: 640px) {
   body {
     margin: 10px auto;
-    max-width: auto;
+    max-width: 90%;
   }
 }
