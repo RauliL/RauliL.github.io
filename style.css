@@ -27,7 +27,7 @@ a {
 }
 
 a:hover {
-  color: DarkGreen;
+  color: LightGreen;
 }
 
 hr ~ a {
@@ -43,6 +43,10 @@ h1, h2, p, pre {
 
 pre {
   overflow-x: auto;
+}
+
+dd > p:first-child {
+  margin-top: 0;
 }
 
 @keyframes flicker {
@@ -67,5 +71,15 @@ pre {
   body {
     margin: 10px auto;
     max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  dt {
+    text-align: center;
+  }
+
+  dd {
+    margin: 10px auto;
   }
 }
