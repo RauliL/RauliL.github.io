@@ -7,16 +7,19 @@
     <LINK REL="stylesheet" HREF="//fonts.googleapis.com/css?family=VT323">
     <LINK REL="stylesheet" HREF="/style.css">
     <SCRIPT>
-      window.dataLayer = [
-        'js',
-        new Date(),
-        'config',
-        'US-162480-2'
-      ];
-      window.fetch('https://www.googletagmanager.com/gtag/js?id=UA-162480-2')
-        .then((response) => response.text())
-        .then((sourceCode) => window.eval(sourceCode))
-        .catch((err) => console.error(err));
+      window.dataLayer = window.dataLayer || [];
+      function gtag () {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-162480-2');
+      window.addEventListener('DOMContentLoaded', function () {
+        const script = document.createElement('script');
+
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-162480-2';
+        document.body.appendChild(script);
+      });
     </SCRIPT>
   </HEAD>
   <BODY>
